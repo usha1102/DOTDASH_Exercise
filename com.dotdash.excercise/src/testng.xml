@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllSuits" preserve-order="true">
+	<suite-files>
+		<suite-file path="/Resources/Suite1.xml"></suite-file>
+		<suite-file path="/Resources/Suite2.xml"></suite-file>
+	</suite-files>
+</suite>

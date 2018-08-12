@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite2" preserve-order="true">
+	<parameter name="SuiteName" value="Suite1"></parameter>
+	<parameter name="RunFromXML" value="false"></parameter>
+	<test name="Task With no Due Date" preserve-order="true">
+		  <classes>
+			    <class name="com.dotdash.excercise.TestConfig">
+			    </class>
+			    <class name="com.dotdash.excercise.AddCategory">
+			    </class>
+			   	<class name="com.dotdash.excercise.AddTaskNoDueDate">
+			    </class>
+			    <class name="com.dotdash.excercise.UpdateTask">
+			    </class>
+			    <class name="com.dotdash.excercise.RemoveTask">
+			    </class>
+			    <class name="com.dotdash.excercise.RemoveCategory">
+			    	<methods>
+			    		<include name="doNotRemoveCategory"/>
+			    		<include name="verifyDoNotRemoveCategory"/>
+			    		<include name="removeCategory"/>
+			    		<include name="verifyRemoveCategory"/>
+			    	</methods>
+			    </class>
+		  </classes>
+	</test>
+</suite>
